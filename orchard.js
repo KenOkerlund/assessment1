@@ -48,8 +48,9 @@ const pinkPrice = .55
 
     Log `totalAcres` to the console.
 */
+
+// Here we are going to loop and add the total value of each iteration to "totalAcres" which will allow it to keep track of previous iterations values.
 let totalAcres = 0;
-// CODE HERE
 for(let i=0; i<7; i++){
      totalAcres += fujiAcres[i] + galaAcres[i] + pinkAcres[i];
 } 
@@ -70,11 +71,10 @@ console.log(totalAcres);
 */
 
 // CODE HERE
+// The average is the total divided by the amount of numbers so it's simply the amount we alreayd calculated divided by 7 since 7 days a week/in the array.
 let numberOfDays = 7;
 let averageDailyAcres = totalAcres / numberOfDays;
 console.log(averageDailyAcres);
-
-
 
 
 // PROBLEM 3
@@ -109,6 +109,7 @@ console.log(averageDailyAcres);
 let acresLeft = 174 
 let days = 0
 
+// a while loop to increment each so called "day" per iteration while decrementing the amount of acres that we have left to work on each iteration. Goes until all the acres are "worked"
 while(acresLeft > 0){
     days += 1;
     acresLeft -= averageDailyAcres;
@@ -143,10 +144,34 @@ console.log(`${days} days`);
 */
 
 // CODE HERE
+// I decided to do a slice in this selection and then realized that since we are not editing the initial arrays values that I could do it without slice or push.
+// I left a commented out slice method in case you wanted to see that.
+// The logic is that you edit the variable "exampleTons" in each iteration of the loop to just be equal to the arrays value in each position multiplied by 6.5 since that is the yield per acre.
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+// let fujiCopy = fujiAcres.slice();
+// let fujiTons = [];
+// let galaCopy = galaAcres.slice();
+// let galaTons = [];
+// let pinkCopy = pinkAcres.slice();
+// let pinkTons = [];
+
+// for(let i = 0; i < fujiCopy.length; i++){
+//     fujiTons[i] = fujiCopy[i] * 6.5;
+//     galaTons[i] = galaCopy[i] * 6.5;
+//     pinkTons[i] = pinkCopy[i] * 6.5;
+// }
+// console.log(fujiTons, galaTons, pinkTons);
+
+let fujiTons = [];
+let galaTons = [];
+let pinkTons = [];
+
+for(let i = 0; i < fujiAcres.length; i++){
+    fujiTons[i] = fujiAcres[i] * 6.5;
+    galaTons[i] = galaAcres[i] * 6.5;
+    pinkTons[i] = pinkAcres[i] * 6.5;
+}
+console.log(fujiTons, galaTons, pinkTons);
 
 
 
@@ -170,11 +195,17 @@ console.log(`${days} days`);
 */
 
 // CODE HERE 
-
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
-
+// Similar to problem 1, this just edits the variable "examplePounds" to be the total value of each iteration of the loop and then multiplied by 2000 to get pounds.
+let fujiPounds = 0;
+let galaPounds = 0;
+let pinkPounds = 0;
+let poundsConverter = 2000;
+for(let i = 0; i < 7; i++){
+    fujiPounds += fujiTons[i] * poundsConverter;
+    galaPounds += galaTons[i] * poundsConverter;
+    pinkPounds += pinkTons[i] * poundsConverter;
+}
+console.log(fujiPounds, galaPounds, pinkPounds);
 
 
 
@@ -194,13 +225,19 @@ console.log(`${days} days`);
 
     Log each of the profits to the 
     console. 
+
+const fujiPrice = .89 
+const galaPrice = .64
+const pinkPrice = .55
 */
 
 // CODE HERE
+// Make a variable that is equal to the pounds times the price. This gives you the amount of potential earnings per variable.
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPounds * fujiPrice;
+let galaProfit = galaPounds * galaPrice;
+let pinkProfit = pinkPounds * pinkPrice;
+console.log(fujiProfit, galaProfit, pinkProfit);
 
 
 
@@ -215,6 +252,9 @@ console.log(`${days} days`);
     `totalProfit`.
 
     Log `totalProfit` to the console.
+    
 */
-
+// Take all of the profits and add them together for a grand total profit.
+totalProfit = fujiProfit + galaProfit + pinkProfit;
+console.log(totalProfit);
 // CODE HERE

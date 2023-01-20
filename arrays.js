@@ -23,9 +23,8 @@ colorCopy.push("blue");
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
-let middleNums = numbers.splice(1,3);
+let middleNums = numbers.slice(1,4);
 // console.log(middleNums, numbers);
-
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -40,7 +39,7 @@ let middleNums = numbers.splice(1,3);
 const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 
 // CODE HERE
-anwers = [];
+let anwers = [];
 for(let i=0; i<bigOrSmallArray.length; i++){
   if(bigOrSmallArray[i] > 100){
     anwers.push("big")
