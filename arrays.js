@@ -3,7 +3,7 @@
 
 const faveColors = ['red', 'green', 'black']
 
-let colorCopy = faveColors.slice();
+const colorCopy = faveColors.slice();
 // console.log(colorCopy, faveColors);
 //CODE HERE
 
@@ -23,7 +23,7 @@ colorCopy.push("blue");
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
-let middleNums = numbers.slice(1,4);
+let middleNums = numbers.slice(1,-1);
 // console.log(middleNums, numbers);
 
 //////////////////PROBLEM 4////////////////////
@@ -48,4 +48,4 @@ for(let i=0; i<bigOrSmallArray.length; i++){
     anwers.push("small")
   }
 }
-// console.log(anwers);
+console.log(anwers);

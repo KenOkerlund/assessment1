@@ -18,7 +18,7 @@ const gitDefinition = "Git is a change log that shows the active changes.";
 */
 
 //CODE HERE
-const gitHubDefinition = "Cloud storage for software development";
+const gitHubDefinition = "Cloud storage of code for software development";
 //////////////////PROBLEM 3////////////////////
 /*
     Create a variable called 'gitInitDefinition'.  
@@ -26,7 +26,7 @@ const gitHubDefinition = "Cloud storage for software development";
 */
 
 //CODE HERE
-const gitInitDefinition = "This is a command that creates a new git repository.";
+const gitInitDefinition = "This is a command that creates a new git repository on your local machine.";
 //////////////////PROBLEM 4////////////////////
 /*
     Create a variable called 'gitCloneDefinition'.  
@@ -40,7 +40,7 @@ const gitCloneDefinition = "A command that copies an existing repository to a lo
     Create a variable called 'gitStatusDefinition'.  
     It should be a string containing your best definition of what 'git status' does.
 */
-const gitStatusDefinition = "A command that lets you know that status of your directory.";
+const gitStatusDefinition = "A command that lets you know that status of your directory and sub directories.";
 
 //CODE HERE
 
@@ -53,7 +53,7 @@ const gitStatusDefinition = "A command that lets you know that status of your di
     It should be a string containing the code to add all files.
 */
 
-const gitAddDefinition = "A command that adds the changes you have made in the directory.";
+const gitAddDefinition = "A command that adds the changes you have made in the directory to the stage.";
 const gitAddCode = "git add .";
 //CODE HERE
 
@@ -76,6 +76,6 @@ const gitCommitCode = "git commit -m 'the text you want for your commit message 
     Create a variable called 'gitPushDefinition'.  
     It should be a string containing your best definition of what 'git push' does.
 */
-const gitPushDefinition = "A command to upload the local repository to the github";
+const gitPushDefinition = "A command to upload the local repository to github";
 
 //CODE HERE

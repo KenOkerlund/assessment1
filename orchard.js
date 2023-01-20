@@ -72,8 +72,8 @@ console.log(totalAcres);
 
 // CODE HERE
 // The average is the total divided by the amount of numbers so it's simply the amount we alreayd calculated divided by 7 since 7 days a week/in the array.
-let numberOfDays = 7;
-let averageDailyAcres = totalAcres / numberOfDays;
+const numberOfDays = 7;
+const averageDailyAcres = totalAcres / numberOfDays;
 console.log(averageDailyAcres);
 
 
@@ -176,8 +176,6 @@ console.log(fujiTons, galaTons, pinkTons);
 
 
 
-
-
 // PROBLEM 5
 
 /*
@@ -232,7 +230,7 @@ const pinkPrice = .55
 */
 
 // CODE HERE
-// Make a variable that is equal to the pounds times the price. This gives you the amount of potential earnings per variable.
+// Make a variable that is equal to the pounds times the price. This gives you the amount of potential earnings per apple type.
 
 let fujiProfit = fujiPounds * fujiPrice;
 let galaProfit = galaPounds * galaPrice;
