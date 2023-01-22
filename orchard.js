@@ -238,10 +238,6 @@ let pinkProfit = pinkPounds * pinkPrice;
 console.log(fujiProfit, galaProfit, pinkProfit);
 
 
-
-
-
-
 // PROBLEM 7
 
 /*
@@ -253,6 +249,6 @@ console.log(fujiProfit, galaProfit, pinkProfit);
     
 */
 // Take all of the profits and add them together for a grand total profit.
-totalProfit = fujiProfit + galaProfit + pinkProfit;
+let totalProfit = fujiProfit + galaProfit + pinkProfit;
 console.log(totalProfit);
 // CODE HERE
