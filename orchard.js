@@ -50,6 +50,10 @@ const pinkPrice = .55
 */
 
 // Here we are going to loop and add the total value of each iteration to "totalAcres" which will allow it to keep track of previous iterations values.
+/* NOTE:
+    I intentionally did all the logic in a single loop for all the problems because the arrays are the same length. I intentionally used ".length" and "7" interchangeably
+    because I wanted to do it both ways. I fully recognize that in a normal scenario you would want different loops for each type of apple.
+*/
 let totalAcres = 0;
 for(let i=0; i<7; i++){
      totalAcres += fujiAcres[i] + galaAcres[i] + pinkAcres[i];
